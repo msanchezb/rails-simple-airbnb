@@ -1,0 +1,20 @@
+// Import your layouts CSS files here.
+// Examples:
+// @import "dashboard";
+// @import "profile";
+// @import "map";
+
+
+body {
+  background-color: rgba(240,240,240,0.2);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cards-container {
+  width: 100vw;
+}

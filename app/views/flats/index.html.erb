@@ -1,0 +1,16 @@
+<h1>Flats</h1>
+
+<div class="wrapper">
+  <div class="cards-container">
+    <div class="row">
+      <% @flats.each do |flat| %>
+        <% @flat = flat %>
+        <%= render "card", flat: flat %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= link_to "New flat", new_flat_path %>
+
+
