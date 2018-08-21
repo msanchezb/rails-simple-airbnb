@@ -1,6 +1,58 @@
-<h1>The flat <%= @flat.name %></h1>
-<p><%= @flat.address %></p>
-<p><%= @flat.description %></p>
-<p><%= @flat.price_per_night %></p>
-<p><%= @flat.number_of_guests %></p>
-<%= link_to "Back", flats_path %>
+<div class="wrapper" id="show">
+  <div class="flat-picture" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= @flat.photo %>)">
+  </div>
+  <div class="container">
+    <div class="flat-text-container">
+      <div class="container-data">
+        <div class="flat-description box-styling">
+          <h1><%= @flat.name %></h1>
+          <h4><%= @flat.address %></h4>
+        </div>
+        <div class="map-container box-styling">
+          <h4>A bit more about this flat...</h4>
+          <p><%= @flat.description %></p>
+          <div class="map"></div>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="flat-form box-styling">
+          <p>Book this place!</p>
+          <form action="#">
+            <div class="form-group">
+              <label for="from">From:</label>
+              <input type="text" name= "from" class="form-control" value="12/08/2018">
+            </div>
+            <div class="form-group">
+              <label for="to">To:</label>
+              <input type="text" name= "to" class="form-control" value="12/08/2018">
+            </div>
+            <input type="submit" action="#" class="btn btn-primary form-control">
+          </form>
+        </div>
+        <div class="details box-styling">
+          <h4>Details:</h4>
+          <ul class="list-inline">
+            <li><i class="fas fa-users"></i><%= @flat.number_of_guests %></li>
+            <li><i class="fas fa-dollar-sign"></i><%= @flat.price_per_night %></li>
+          </ul></p>
+        </div>
+        <div class="links box-styling">
+          <h4>Share:</h4>
+          <ul>
+            <li><a href="#">
+              <i class="fab fa-facebook"></i>
+            </a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+            <li><a href="#"><i class="fas fa-envelope-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+      <%= link_to "Back", flats_path, class: "btn btn-primary", style: "width: 200px;" %>
+    </div>
+  </div>
+</div>
+

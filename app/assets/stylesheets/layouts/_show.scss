@@ -1,0 +1,63 @@
+#show {
+  .flat-picture {
+    z-index: -1;
+    height: 400px;
+    background-size: cover !important;
+  }
+
+  .container {
+    position: absolute;
+    top: 300px;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .flat-text-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+  }
+
+  .box-styling {
+    background-color: rgba(240,240,240,1);
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+
+  .container-data {
+    width: 70%;
+    padding: 10px;
+
+  }
+
+  .form-container {
+    width: 30%;
+    padding: 10px;
+  }
+
+  .map {
+    background-image: url("https://i.stack.imgur.com/yEshb.gif");
+    background-size: cover;
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .details {
+    text-align: center;
+  }
+
+  .links {
+    text-align: center;
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+

@@ -1,9 +1,7 @@
-<% url_flat = "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7eb3cf84fa5988885f62b3ee0dfac1fe&auto=format&fit=crop&w=973&q=80" %>
-
 
 <div class="col-xs-6 col-sm-4 col-md-3">
   <div class="card">
-    <div class="card-picture" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= url_flat %>)">
+    <div class="card-picture" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= flat.photo %>)">
     </div>
     <div class="card-description">
       <h4><%= flat.name %></h4>
@@ -24,4 +22,5 @@
     </div>
   </div>
 </div>
+
 

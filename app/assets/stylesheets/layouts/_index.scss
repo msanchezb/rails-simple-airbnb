@@ -4,17 +4,21 @@
 // @import "profile";
 // @import "map";
 
+@import "show";
 
 body {
   background-color: rgba(240,240,240,0.2);
 }
 
-.wrapper {
+.cards-container {
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.cards-container {
+.button-container {
   width: 100vw;
+  padding: 20px;
+  text-align: center;
 }
